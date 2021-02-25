@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1"
+    />
+    <meta
+      name="keywords"
+      content="şifre, şifre oluşturucu, güçlü şifre oluşturucu, parola oluşturucu, güvenli şifre oluşurucu, rastgele şifre oluşturucu"
+    />
+    <meta
+      name="description"
+      content="Güçlü Şifreler Oluşturarak İşletmenizi Hesabınızı Güvende Tutabilirsiniz :)"
+    />
+    <meta name="abstract" content="Güçlü Şifreler Oluşturan Araç." />
+    <meta name="author" content="İbrahim Ödev, www.ibrahimodev.tk" />
+    <meta name="Copyright" content="@ İbrahim Ödev 2020" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Turkish" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="publisher" content="Visual Studio Code 2020" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859" />
+    <meta http-equiv="content-language" content="tr" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/66b2912344.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Şifre Oluşturucu - ibrahimodev.tk</title>
+  </head>
+  <body>
+    <div class="kutu">
+      <h4>Güçülü Şifreler Oluştur</h4>
+      <div class="secenekler">
+        <div>
+          <label for="karakter"
+            >Şifre Uzunluğu : <span id="uzunluk_out"></span
+          ></label>
+          <br />
+          <input
+            id="karakter"
+            oninput="uzunluk()"
+            value="10"
+            type="range"
+            min="10"
+            max="20"
+          />
+        </div>
+        <div>
+          <input id="sayi" type="checkbox" checked/>
+          <label for="sayi">Sayılar</label>
+        </div>
+        <div>
+          <input id="b_harf" type="checkbox" checked />
+          <label for="b_harf">Büyük Harf</label>
+        </div>
+        <div>
+          <input id="k_harf" type="checkbox" checked />
+          <label for="k_harf">Küçük Harf</label>
+        </div>
+        <div>
+          <input id="sembol" type="checkbox" />
+          <label for="sembol">Semboller</label>
+        </div>
+      </div>
+      <div class="output">
+        <button id="eyes"><i id="icon" class="far fa-eye"></i></button>
+        <input id="sifre" name="sifre" readonly />
+      </div>
+      <div class="butonlar">
+        <button onclick="gen()">
+          <i class="fas fa-plus"></i> Şifre Oluştur
+        </button>
+        <button id="btn"><i class="far fa-copy"></i> Şifre'yi Kopyala</button>
+      </div>
+      <a
+        href="https://password.kaspersky.com/tr/"
+		title="Şifrenin Gücünü Test Et."
+		target="_blank"
+        >Şifrenin Gücünü Test Et.</a
+      >
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
